@@ -1,0 +1,244 @@
+/*
+=================================
+  CUSTOM PROPERTIES
+=================================
+*/
+:root {
+  /* colors */
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+
+  /* font-sizes */
+  --fs-300: clamp(42rem / 16, 1rem + 5vw, 60rem / 16);
+  --fs-200: clamp(28rem / 16, 1rem + 5vw, 42rem / 16);
+
+  /* font-weight */
+  --fw-400: 400;
+  --fw-300: 300;
+
+  /* font-family */
+  --ff-alata: "Alata", sans-serif;
+  --ff-josefin: "Josefin Sans", sans-serif;
+}
+
+
+
+/*
+=================================
+  RESETS
+=================================
+*/
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input, select, textarea, button {
+  font: inherit;
+}
+
+body {
+  font: calc(15em / 16) var(--ff-alata);
+  font-weight: 400;
+  color: var(--dark-gray);
+  min-height: 200vh;
+  background-color: var(--white);
+}
+
+
+@media (prefers-reduced-motions: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/*
+=================================
+  UTILITIES
+=================================
+*/
+/* general */
+.container {
+  width: min(85%, 1000px);
+  margin: 0 auto;
+}
+
+/* Typography */
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200) }
+
+.fw-400 { font-weight: var(--fw-400); }
+.fw-300 { font-weight: var(--fw-300); }
+
+.ff-alata { font-family: var(--ff-alata); }
+.ff-josefin { font-family: var(--ff-josefin); }
+
+.uppercase { text-transform: uppercase; }
+
+.text-white { color: var(--white) }
+.text-black {color: var(--black) }
+
+
+/*
+=================================
+  COMPONENTS
+=================================
+*/
+/* Hero */
+header {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url('./assets/images/mobile/image-hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: scale(1.2);
+  animation: scale 2800ms ease forwards;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 35em) {
+  .hero {
+    background-image: url('./assets/images/desktop/image-hero.jpg');
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(50rem / 16) 0;
+}
+
+/* Logo */
+.logo {
+  width: 130px;
+}
+
+/* Hamburger */
+.hamburger {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+@media (max-width: 45em) {
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Navbar */
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 45em) {
+  .nav {
+    display: none;
+  }
+}
+
+/* Intro Message */
+.intro {
+  padding: calc(50rem / 16) 0 calc(200rem / 16);
+}
+
+.intro__heading {
+  border: 1px solid var(--white);
+  padding: calc(20rem / 16);
+  width: min(100%, 525px);
+}
+
+@media (min-width: 35em) {
+  .intro {
+    padding-bottom: calc(100rem / 16);
+  }
+}
+
+/* Leader Section */
+.leader {
+  padding: calc(100rem / 16) 0;
+}
+
+.leader__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.leader__content {
+  text-align: center;
+  padding: calc(20rem / 16);
+  background-color: var(--white);
+}
+
+.leader__content > * {
+  margin-top: calc(20em / 16);
+}
+
+@media (min-width: 45em) {
+  .leader__container {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .leader__image {
+    width: 60%;
+  }
+
+  .leader__content {
+    text-align: left;
+    position: absolute;
+    width: 50%;
+    padding: 80px 0 0 65px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .leader__content h2 {
+    margin-top: 0;
+  }
+}
+
+
