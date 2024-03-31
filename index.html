@@ -23,15 +23,15 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="hero"></div>
+  <header class="header">
+    <div class="header__hero"></div>
     <div class="container">
-      <div class="header">
-        <div class="logo"><img src="./assets/images/logo.svg" alt=""></div>
-        <button class="hamburger" type="button">
+      <div class="header__main">
+        <div class="header__logo"><img src="./assets/images/logo.svg" alt=""></div>
+        <button class="header__menu" type="button">
           <img src="./assets/images/icon-hamburger.svg" alt="">
         </button>
-        <nav class="nav">
+        <nav class="header__nav">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
@@ -41,8 +41,8 @@
           </ul>
         </nav>
       </div>
-      <div class="intro">
-        <h1 class="intro__heading ff-josefin fw-300 uppercase fs-300 text-white">
+      <div class="header__intro">
+        <h1 class="header__title ff-josefin fw-300 uppercase fs-300 text-white">
           Immersive experiences that deliver
         </h1>
       </div>
@@ -50,9 +50,9 @@
   </header>
 
   <main>
-    <section>
-      <div class="leader container">
-        <div class="leader__container">
+    <section class="leader">
+      <div class="container">
+        <div class="leader__card">
           <div class="leader__image">
             <picture>
               <source media="(min-width: 45em)" srcset="./assets/images/desktop/image-interactive.jpg">
@@ -73,26 +73,203 @@
       </div>
     </section>
 
-    <section style="border: 1px solid black;">
+    <section class="creations">
+      <div class="container creations__grid">
+        <h2 class="ff-josefin fw-300 fs-200 text-black uppercase">Our creations</h2>
+        <div class="creations__img-grid">
+          <a href="#" class="creations__img-container">
+            <div class="creations__img">
+              <picture>
+                <source
+                  media="(min-width: 45em)"
+                  srcset="./assets/images/desktop/image-deep-earth.jpg"
+                  >
+                <source
+                  media="(max-width: 45em)"
+                  srcset="./assets/images/mobile/image-deep-earth.jpg"
+                  >
+                <img
+                  src="./assets/images/mobile/image-deep-earth.jpg"
+                  alt="An image of the earth"
+                  >
+              </picture>
+            </div>
+            <h3 class="creations__title ff-josefin fw-300 text-white uppercase">
+              Deep Earth
+            </h3>
+          </a>
 
+          <a href="#" class="creations__img-container">
+            <div class="creations__img">
+              <picture>
+                <source
+                  media="(min-width: 45em)"
+                  srcset="./assets/images/desktop/image-night-arcade.jpg"
+                  >
+                <source
+                  media="(max-width: 45em)"
+                  srcset="./assets/images/mobile/image-night-arcade.jpg"
+                  >
+                <img
+                  src="./assets/images/mobile/image-night-arcade.jpg"
+                  alt="An image of the earth"
+                  >
+              </picture>
+            </div>
+            <h3 class="creations__title ff-josefin fw-300 text-white uppercase">
+              Night arcade
+            </h3>
+          </a>
+
+          <a href="#" class="creations__img-container">
+            <div class="creations__img">
+              <picture>
+                <source
+                  media="(min-width: 45em)"
+                  srcset="./assets/images/desktop/image-soccer-team.jpg"
+                  >
+                <source
+                  media="(max-width: 45em)"
+                  srcset="./assets/images/mobile/image-soccer-team.jpg"
+                  >
+                <img
+                  src="./assets/images/mobile/image-soccer-team.jpg"
+                  alt="An image of the earth"
+                  >
+              </picture>
+            </div>
+            <h3 class="creations__title ff-josefin fw-300 text-white uppercase">
+              Soccer team VR
+            </h3>
+          </a>
+
+          <a href="#" class="creations__img-container">
+            <div class="creations__img">
+              <picture>
+                <source
+                  media="(min-width: 45em)"
+                  srcset="./assets/images/desktop/image-grid.jpg"
+                  >
+                <source
+                  media="(max-width: 45em)"
+                  srcset="./assets/images/mobile/image-grid.jpg"
+                  >
+                <img
+                  src="./assets/images/mobile/image-grid.jpg"
+                  alt="An image of the earth"
+                  >
+              </picture>
+            </div>
+            <h3 class="creations__title ff-josefin fw-300 text-white uppercase">
+              The grid
+            </h3>
+          </a>
+
+          <a href="#" class="creations__img-container">
+            <div class="creations__img">
+              <picture>
+                <source
+                  media="(min-width: 45em)"
+                  srcset="./assets/images/desktop/image-from-above.jpg"
+                  >
+                <source
+                  media="(max-width: 45em)"
+                  srcset="./assets/images/mobile/image-from-above.jpg"
+                  >
+                <img
+                  src="./assets/images/mobile/image-from-above.jpg"
+                  alt="An image of the earth"
+                  >
+              </picture>
+            </div>
+            <h3 class="creations__title ff-josefin fw-300 text-white uppercase">
+              From up above VR
+            </h3>
+          </a>
+
+          <a href="#" class="creations__img-container">
+            <div class="creations__img">
+              <picture>
+                <source
+                  media="(min-width: 45em)"
+                  srcset="./assets/images/desktop/image-pocket-borealis.jpg"
+                  >
+                <source
+                  media="(max-width: 45em)"
+                  srcset="./assets/images/mobile/image-pocket-borealis.jpg"
+                  >
+                <img
+                  src="./assets/images/mobile/image-pocket-borealis.jpg"
+                  alt="An image of the earth"
+                  >
+              </picture>
+            </div>
+            <h3 class="creations__title ff-josefin fw-300 text-white uppercase">
+              Pocket borealis
+            </h3>
+          </a>
+
+          <a href="#" class="creations__img-container">
+            <div class="creations__img">
+              <picture>
+                <source
+                  media="(min-width: 45em)"
+                  srcset="./assets/images/desktop/image-curiosity.jpg"
+                  >
+                <source
+                  media="(max-width: 45em)"
+                  srcset="./assets/images/mobile/image-curiosity.jpg"
+                  >
+                <img
+                  src="./assets/images/mobile/image-curiosity.jpg"
+                  alt="An image of the earth"
+                  >
+              </picture>
+            </div>
+            <h3 class="creations__title ff-josefin fw-300 text-white uppercase">
+              The curiosity
+            </h3>
+          </a>
+
+          <a href="#" class="creations__img-container">
+            <div class="creations__img">
+              <picture>
+                <source
+                  media="(min-width: 45em)"
+                  srcset="./assets/images/desktop/image-fisheye.jpg"
+                  >
+                <source
+                  media="(max-width: 45em)"
+                  srcset="./assets/images/mobile/image-fisheye.jpg"
+                  >
+                <img
+                  src="./assets/images/mobile/image-fisheye.jpg"
+                  alt="An image of the earth"
+                  >
+              </picture>
+            </div>
+            <h3 class="creations__title ff-josefin fw-300 text-white uppercase">
+              Make it fisheye
+            </h3>
+          </a>
+        </div>
+        <button type="button" class="creations__btn uppercase ff-alata">See all</button>
+      </div>
     </section>
   </main>
   <!--
 
 
 
-  Our creations
-
-  See all
 
   Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+
+
+
+
+
+
+
 
   About
   Careers
