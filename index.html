@@ -28,10 +28,10 @@
     <div class="container">
       <div class="header__main">
         <div class="logo"><img src="./assets/images/logo.svg" alt=""></div>
-        <button class="header__menu" type="button">
-          <img src="./assets/images/icon-hamburger.svg" alt="">
+        <button class="header__menu" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only">Menu</span>
         </button>
-        <nav class="nav">
+        <nav class="header__nav nav" id="primary-nav">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
@@ -81,13 +81,13 @@
             <div class="creations__img">
               <picture>
                 <source
-                  media="(min-width: 45em)"
+                  media="(min-width: 48em)"
                   srcset="./assets/images/desktop/image-deep-earth.jpg"
                   >
-                <source
-                  media="(max-width: 45em)"
+                <!-- <source
+                  media="(max-width: 35em)"
                   srcset="./assets/images/mobile/image-deep-earth.jpg"
-                  >
+                  > -->
                 <img
                   src="./assets/images/mobile/image-deep-earth.jpg"
                   alt="An image of the earth"
@@ -103,7 +103,7 @@
             <div class="creations__img">
               <picture>
                 <source
-                  media="(min-width: 45em)"
+                  media="(min-width: 48em)"
                   srcset="./assets/images/desktop/image-night-arcade.jpg"
                   >
                 <source
@@ -125,13 +125,13 @@
             <div class="creations__img">
               <picture>
                 <source
-                  media="(min-width: 45em)"
+                  media="(min-width: 48em)"
                   srcset="./assets/images/desktop/image-soccer-team.jpg"
                   >
-                <source
+                <!-- <source
                   media="(max-width: 45em)"
                   srcset="./assets/images/mobile/image-soccer-team.jpg"
-                  >
+                  > -->
                 <img
                   src="./assets/images/mobile/image-soccer-team.jpg"
                   alt="An image of the earth"
@@ -147,13 +147,13 @@
             <div class="creations__img">
               <picture>
                 <source
-                  media="(min-width: 45em)"
+                  media="(min-width: 48em)"
                   srcset="./assets/images/desktop/image-grid.jpg"
                   >
-                <source
+                <!-- <source
                   media="(max-width: 45em)"
                   srcset="./assets/images/mobile/image-grid.jpg"
-                  >
+                  > -->
                 <img
                   src="./assets/images/mobile/image-grid.jpg"
                   alt="An image of the earth"
@@ -169,13 +169,13 @@
             <div class="creations__img">
               <picture>
                 <source
-                  media="(min-width: 45em)"
+                  media="(min-width: 48em)"
                   srcset="./assets/images/desktop/image-from-above.jpg"
                   >
-                <source
+                <!-- <source
                   media="(max-width: 45em)"
                   srcset="./assets/images/mobile/image-from-above.jpg"
-                  >
+                  > -->
                 <img
                   src="./assets/images/mobile/image-from-above.jpg"
                   alt="An image of the earth"
@@ -191,13 +191,13 @@
             <div class="creations__img">
               <picture>
                 <source
-                  media="(min-width: 45em)"
+                  media="(min-width: 48em)"
                   srcset="./assets/images/desktop/image-pocket-borealis.jpg"
                   >
-                <source
+                <!-- <source
                   media="(max-width: 45em)"
                   srcset="./assets/images/mobile/image-pocket-borealis.jpg"
-                  >
+                  > -->
                 <img
                   src="./assets/images/mobile/image-pocket-borealis.jpg"
                   alt="An image of the earth"
@@ -213,13 +213,13 @@
             <div class="creations__img">
               <picture>
                 <source
-                  media="(min-width: 45em)"
+                  media="(min-width: 48em)"
                   srcset="./assets/images/desktop/image-curiosity.jpg"
                   >
-                <source
+                <!-- <source
                   media="(max-width: 45em)"
                   srcset="./assets/images/mobile/image-curiosity.jpg"
-                  >
+                  > -->
                 <img
                   src="./assets/images/mobile/image-curiosity.jpg"
                   alt="An image of the earth"
@@ -235,13 +235,13 @@
             <div class="creations__img">
               <picture>
                 <source
-                  media="(min-width: 45em)"
+                  media="(min-width: 48em)"
                   srcset="./assets/images/desktop/image-fisheye.jpg"
                   >
-                <source
+                <!-- <source
                   media="(max-width: 45em)"
                   srcset="./assets/images/mobile/image-fisheye.jpg"
-                  >
+                  > -->
                 <img
                   src="./assets/images/mobile/image-fisheye.jpg"
                   alt="An image of the earth"
@@ -287,28 +287,6 @@
     </div>
 
   </footer>
-  <!--
-
-
-
-
-  Deep earth
-
-
-
-
-
-
-
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  ©  -->
-
   <!-- <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
