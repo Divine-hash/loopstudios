@@ -1,13 +1,17 @@
 "use strict";
-const menu = document.querySelector('.header__menu');
-menu.addEventListener('click', onClickEvent);
-function onClickEvent() {
-    if (this.getAttribute('aria-expanded') == 'false') {
+const button = document.getElementById('menu-btn');
+button.addEventListener('click', onclickEvent);
+function onclickEvent({ target }) {
+    const btn = target.closest('button');
+    if (!btn)
+        return;
+    let isExpanded = this.getAttribute('aria-expanded');
+    if (isExpanded == 'false') {
         this.setAttribute('aria-expanded', 'true');
-        document.body.style.overflowY = 'hidden';
+        document.body.style.setProperty('overflow', 'hidden');
     }
     else {
-        this.setAttribute('aria-expanded', 'false');
-        document.body.style.overflowY = '';
+        this.setAttribute('aria-expanded', "false");
+        document.body.style.setProperty('overflow', '');
     }
 }
