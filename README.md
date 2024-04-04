@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/loopstudios.png.jpg)
+![](./assets/images/loopstudios.png)
 
 ### Links
 
