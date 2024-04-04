@@ -41,4 +41,4 @@ Users should be able to:
 - Mobile-first workflow
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/@Divine-hash)
+- Frontend Mentor - [@Divine-hash](https://www.frontendmentor.io/profile/@Divine-hash)
