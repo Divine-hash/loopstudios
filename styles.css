@@ -166,8 +166,8 @@ body {
 
 
 .header__menu {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -220,7 +220,14 @@ body {
     height: 100%;
   }
 
-  .header__menu img:nth-child(3) {
+  .header__menu > img:nth-child(2) {
+    width: 25px;
+    height: 22px;
+  }
+
+  .header__menu > img:nth-child(3) {
+    width: 22px;
+    height: 22px;
     display: none;
   }
 
