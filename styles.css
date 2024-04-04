@@ -49,6 +49,10 @@ input, select, textarea, button {
   font: inherit;
 }
 
+a:focus-visible {
+  outline: none;
+}
+
 body {
   font: calc(15em / 16) var(--ff-alata);
   font-weight: 400;
@@ -199,7 +203,7 @@ body {
     position: relative
   }
 
-  .header__nav ul li:before {
+  .header__nav ul a:before {
     position: absolute;
     content: "";
     width: 100%;
@@ -210,7 +214,8 @@ body {
     transition: transform 300ms;
   }
 
-  .header__nav ul li:hover::before {
+  .header__nav ul a:hover::before,
+  .header__nav ul a:focus-visible::before {
     transform: scaleX(1);
   }
 
@@ -428,7 +433,8 @@ body {
   z-index: 2;
 }
 
-.creations__img-container:hover::before {
+.creations__img-container:hover::before,
+.creations__img-container:focus-visible::before {
   opacity: 1;
   visibility: visible;
   transition-delay: 0s;
@@ -478,11 +484,13 @@ body {
   transition: all 350ms ease-in;
 }
 
-.creations__btn:hover {
+.creations__btn:hover,
+.creations__btn:focus-visible {
   color: #fff;
 }
 
-.creations__btn:hover::before {
+.creations__btn:hover::before,
+.creations__btn:focus-visible::before {
   clip-path: circle(200% at 0% 0%);
 }
 
