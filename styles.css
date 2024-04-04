@@ -78,7 +78,7 @@ body {
 */
 /* general */
 .container {
-  width: min(85%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
 }
 
@@ -167,7 +167,7 @@ body {
 
 .header__menu {
   width: 25px;
-  height: 22px;
+  height: 20px;
   background-color: transparent;
   background-repeat: no-repeat;
   border: none;
@@ -180,7 +180,7 @@ body {
 
 .header__title {
   border: 1px solid var(--white);
-  padding: calc(20rem / 16);
+  padding: calc(18rem / 16);
   width: min(100%, 525px);
 }
 
