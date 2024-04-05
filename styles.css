@@ -452,7 +452,7 @@ body {
 
 .creations__img img {
   position: relative; /* add shadow on image */
-  z-index: 1; /* add shadow on image */
+  z-index: -1; /* add shadow on image */
   object-fit: cover;
   height: 100%;
   width: 100%;
